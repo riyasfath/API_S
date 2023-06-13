@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "fe918577-01db-4a59-9c83-a02395dc91a1",
+		"name": "Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27702598"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/categories?populate=image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "populate",
+							"value": "image"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "c1a9a0b7-2b00-4d6e-8776-a0ceb5abf7ca",
+		"name": "Popular-Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27702598"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/popular-products?populate=product,product.images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"popular-products"
+					],
+					"query": [
+						{
+							"key": "populate",
+							"value": "product,product.images"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

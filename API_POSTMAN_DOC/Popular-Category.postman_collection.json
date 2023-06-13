@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "2dd425ac-cf66-462f-9538-69af98ce0cf7",
+		"name": "Popular-Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27702598"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/popular-categories?populate=category,category.image&pagination[start]=0&pagination[limit]=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"popular-categories"
+					],
+					"query": [
+						{
+							"key": "populate",
+							"value": "category,category.image"
+						},
+						{
+							"key": "pagination[start]",
+							"value": "0"
+						},
+						{
+							"key": "pagination[limit]",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

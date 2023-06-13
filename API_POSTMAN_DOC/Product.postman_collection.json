@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "d4bf5fc7-8a71-438e-be23-6a6b8d7ef7c9",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27702598"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/products?populate=images,tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "populate",
+							"value": "images,tags"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/products?populate=images,tags&filters[name][$contains]=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "populate",
+							"value": "images,tags"
+						},
+						{
+							"key": "filters[name][$contains]",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
